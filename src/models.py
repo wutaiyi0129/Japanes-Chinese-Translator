@@ -58,7 +58,8 @@ class OpenAIModel(ModelInterface):
 
     def image_generations(self, prompt: str) -> str:
         json_body = {
-            "prompt": prompt,
+            "model"="dall-e-3",
+            "prompt":prompt,
             "n": 1,
             "size": "512x512"
         }
